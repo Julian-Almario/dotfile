@@ -262,9 +262,10 @@ wmname = "LG3D"
 autostart = [
         "setxbmap es",
         "feh --bg-fill /home/docz/Imágenes/Wallpapers/1163866.jpg",
-        "picom &"
-        "nitrogen --restore &"
-        "xrandr --auto"
+        "picom &",
+        "nitrogen --restore &",
+        #"xrandr --auto"
+        "xrandr --output eDP1 --auto --output HDMI1 --auto --above eDP1"
         ]
 
 for x in autostart:
