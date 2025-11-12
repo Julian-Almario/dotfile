@@ -22,25 +22,23 @@ This is a perfect and simple approach for me; someone else might like it as much
 
 # programs
 ## pip
-- [ ] ranger
-- [ ] pywal
+- pywal
 
 ## global
-- [ ] Picom
-- [ ] feh
-- [ ] rofi
+- Picom
+- feh
+- rofi
  
 # Used
-- [ ] Alacritty
-- [ ] Python
-- [ ] Jamovi
-- [ ] Ranger (file manager)
-- [ ] Firefox
-- [ ] Zotero
-- [ ] Anki
-- [ ] Freecad
-- [ ] Obsidian
-- [ ] Neovim
-- [ ] Arduino
-- [ ] Thonny
-- [ ] Kicad
+- Alacritty
+- Jamovi
+- Ranger (file manager)
+- Firefox
+- Zotero
+- Anki
+- Freecad
+- Obsidian
+- Neovim
+- Arduino
+- Thonny
+- Kicad
