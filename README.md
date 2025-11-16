@@ -10,9 +10,6 @@ My case is a bit unique because I'm studying medicine, so I'm going to focus on 
 - FreeCAD
 - Anki
 - Notes: I love Obsidian :) or use a plain text editor
-- KiCat
-- Arduino IDE or something similar
-- Thonny
 - Neovim
 - Ranger (File Explorer)
 - Qtile as a window manager
@@ -21,8 +18,6 @@ This is a perfect and simple approach for me; someone else might like it as much
 
 
 # programs
-## pip
-- pywal
 
 ## global
 - Picom
@@ -39,6 +34,3 @@ This is a perfect and simple approach for me; someone else might like it as much
 - Freecad
 - Obsidian
 - Neovim
-- Arduino
-- Thonny
-- Kicad
