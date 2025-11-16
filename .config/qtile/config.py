@@ -7,8 +7,12 @@ import os
 
 mod = "mod4"
 terminal = 'alacritty'
-web = 'Firefox'
+web = 'firefox'
 notes = 'obsidian'
+flashcards = 'anki'
+cad = 'FreeCAD'
+refadmin = 'Zotero'
+epidemiology = 'jamovi'
 
 # Colors
 text_light = '#ebdbb2'
@@ -39,7 +43,7 @@ keys = [
      
 
     # keys programs
-    Key([mod, "control"], "t", lazy.spawn(terminal), desc="Launch terminal"),
+    Key([mod], "t", lazy.spawn(terminal), desc="Launch terminal"),
     
 
 
@@ -55,7 +59,7 @@ keys = [
     # Global keys important
     Key([mod, "control"], "r", lazy.reload_config(), desc="Reload the config"),
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
-    Key([mod], "r", lazy.spawn("rofi -show drun -theme gruvbox-dark"), desc="Rofi"),
+    Key([mod], "r", lazy.spawn("rofi -show drun -show-icons -b -theme gruvbox-dark"), desc="Rofi"),
 ]
 
 for vt in range(1, 8):
@@ -70,11 +74,11 @@ for vt in range(1, 8):
 
 
 groups = [
-    Group("1", matches=[Match(wm_class=[web])]),
-    Group("2", matches=[Match(wm_class="code")]),
-    Group("3", matches=[Match(title="freecad")]),
-    Group("4", matches=[Match(wm_class=[notes])]),
-    Group("5", matches=[Match(title="kicad")]),
+    Group("1"),
+    Group("2", matches=[Match(wm_class=[web])]),
+    Group("3", matches=[Match(wm_class=[notes,flashcards])]),
+    Group("4", matches=[Match(wm_class=[cad])]),
+    Group("5", matches=[Match(wm_class=[epidemiology,refadmin])]),
     ]
 
 
@@ -102,10 +106,6 @@ layouts = [
     layout.MonadTall(
         border_focus=orange,
         margin = 5
-        ),
-    layout.MonadWide(
-        border_focus=orange,
-        margin = 5
         )
     ]
 
@@ -125,7 +125,7 @@ screens = [
                     foreground=text_light,
                     this_current_screen_border=orange
                     ),
-                widget.Spacer(),
+                widget.WindowName(),
                 widget.Systray(),
                  widget.TextBox(
                     "",
@@ -218,8 +218,9 @@ wmname = "LG3D"
 
 
 autostart = [
-"feh --bg-fil /home/julian/Imágenes/Wallpapers/73.jpg",
-"picom &"
+    "setxkbmap latam",
+    "feh --bg-fil /home/julian/Imágenes/Wallpapers/83.jpg",
+    "picom &"
         ]
 
 
