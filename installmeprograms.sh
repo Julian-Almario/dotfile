@@ -5,7 +5,7 @@ sudo pacman -S xdg-user-dirs rofi ranger picom feh obsidian neovim discord
 
 # Install terminal isues
 
-sudo pacman -S starship lsd
+sudo pacman -S starship lsd fastfetch gtop
 
 # Install common fonts for arch
 
