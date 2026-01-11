@@ -1,4 +1,15 @@
-xdg-user-dirs-update
+#Script para enlazar dotfiles
 
-sh -c '~/.config/nvim/autoload/plug.vim --create-dirs \
-       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+DOTFILES_DIR=$(pwd)
+
+echo "Creado enlaces..."
+
+ln -sf "$DOTFILES_DIR/.bashrc" "$HOME/.bashrc"
+
+ln -sf "$DOTFILES_DIR/.config" "$HOME/.config"
+
+mkdir -p "$HOME/Imágenes/Wallpapers"
+ln -sf "$DOTFILES_DIR/Wallpapers" "$HOME/Imágenes/Wallpapers"
+
+echo "Enlaces creado :)"
+

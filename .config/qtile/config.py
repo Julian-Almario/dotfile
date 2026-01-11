@@ -219,7 +219,7 @@ wmname = "LG3D"
 
 autostart = [
     "setxkbmap latam",
-    "feh --bg-fil /home/julian/Imágenes/Wallpapers/83.jpg",
+    "feh --bg-fil $HOME/Imágenes/Wallpapers/83.jpg",
     "picom &"
         ]
 
