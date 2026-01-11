@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # install programs
-sudo pacman -S xdg-user-dirs rofi ranger picom feh obsidian neovim discord
+sudo pacman -S xdg-user-dirs rofi ranger picom feh obsidian neovim discord pavucontrol
 
 # Install terminal isues
 
