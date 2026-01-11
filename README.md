@@ -34,3 +34,8 @@ This is a perfect and simple approach for me; someone else might like it as much
 - Freecad
 - Obsidian
 - Neovim
+
+
+# Sysmanintenance arch
+
+I got the script from [here](https://github.com/kurealnum/dotfiles)
