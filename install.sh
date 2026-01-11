@@ -1,3 +1,4 @@
+#!/bin/bash
 #Script para enlazar dotfiles
 
 DOTFILES_DIR=$(pwd)
