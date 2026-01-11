@@ -7,6 +7,7 @@ echo "Creado enlaces..."
 
 ln -sf "$DOTFILES_DIR/.bashrc" "$HOME/.bashrc"
 
+mkdir -p "$HOME/.config"
 ln -sf "$DOTFILES_DIR/.config" "$HOME/.config"
 
 mkdir -p "$HOME/Imágenes/Wallpapers"
